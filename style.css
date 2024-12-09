@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.home
+{
+    width: 100%;
+    height: 100vh;
+    border: solid;
+    position: relative;
+    background-image: url('Assert/bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+header
+{
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+height: 70px;
+padding: 0 5%;
+width: 100%;
+transition: background-color 0.3s ease;
+z-index: 100;
+position: fixed;
+}
+header.scrolled {
+    background-color: rgba(26, 25, 25, 0.816); /*you can Change to any color on scroll */
+}
+header.scrolled nav a {
+    color: white; 
+    background-color:    rgba(0, 0, 0, 0.5);
+}
+header scrolled nav a.avt
+{
+    background-color: greenyellow;
+     
+}
+header h1{
+    font-size: xxx-large;
+    font-weight: 600 ;
+   color: greenyellow;
+   font-family: "Dancing Script", cursive;
+   
+}
+header nav 
+{
+    /* border: solid; */
+    display: flex;
+    gap: 20px;
+}
+header nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 99px;
+    transition: 0.5s;
+    color:white;
+
+}
+header nav a.avt{
+background-color: greenyellow;
+color: black;
+}
+header nav a:hover{
+    background-color:greenyellow;  
+    color: black;
+    box-shadow: 0 0 1rem greenyellow;
+}
+header nav:hover > a:not(:hover){
+background: none;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+
+}
+header .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    
+}
+.title{
+    font-family: "Dancing Script", cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 140px;
+    font-weight: 800;
+    transform: translate(-50%,-50%);
+    color:greenyellow;
+    transition: margin-top 0.1s ease-out; 
+
+}
+.tag{
+    position: absolute;
+    /* border: solid; */
+    top: 65%;
+    left: 50%;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%,-50%);
+    color:white; 
+    white-space: nowrap;
+}
+
+/* about --------------------------------------*/
+.About
+{  width: 100%;
+    height: 100vh;
+    /* border: solid; */
+    display: flex;
+}
+.p1
+{
+    width: 50%;
+    height: 100vh;
+    /* border: red solid; */
+  
+}
+.p1 img{
+    width: 65%;
+    height: 48%;
+    margin-left: 28%;
+    border-radius: 10%;
+    margin-top: 25%;
+
+}
+.p2
+{
+    width: 50%;
+    height: 100vh;
+    /* border: yellow solid;  */
+  
+}
+.p2 h1{
+   font-size: 40px;
+   padding-left: 3%;
+   padding-top: 20%;
+   white-space: nowrap;
+   font-weight: 500;
+
+}
+.underline
+{
+    border-bottom: 5px solid green; /* Adds a green underline */
+    display: inline-block; /* Keeps underline only under the text */
+    padding-bottom: 3px; 
+}
+ .p2 p
+{ 
+    padding-left: 3%;
+    padding-top: 2%;
+    margin-right: 5%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.p2 h2{
+    font-size: 25px;
+   padding-left: 3%;
+   padding-top: 2%;
+   font-weight: 500;
+}
+.ab{
+    background-image: url('Assert/ab.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+}
+.ab h1{
+    border-bottom: 4px solid greenyellow; /* Adds a green underline */
+    display: inline-block; /* Keeps underline only under the text */
+    padding-bottom: 3px; 
+    color:white;
+    margin-left: 45%;
+    margin-top: 7%;
+    font-size: 50px;
+    font-weight: 400;
+    text-shadow: 5px 5px 10px rgba(33, 169, 33, 0.94);
+   
+}
+.ab p{
+    margin-left: 32%; 
+    margin-top: 1%;
+    font-size: 35px;
+    white-space: nowrap;
+    font-weight: 300;
+    color:black;
+   
+
+}
+/* menu list */
+.items{
+    width: 100%;
+    /* border: solid; */
+    height: auto;
+}
+.item1
+{
+    display: flex;
+    width: 100%;
+    /* border: solid saddlebrown; */
+}
+.item1_1
+{
+    width: 50%;
+    /* border: solid red; */
+}
+
+
+.item1_2
+{
+    width: 50%;
+    /* border: solid rgb(0, 8, 255); */
+}
+.item2
+{
+    display: flex;
+    width: 100%;
+    /* border: solid saddlebrown; */
+}
+.item2_1
+{
+    width: 50%;
+    /* border: solid red; */
+}
+
+
+.item2_2
+{
+    width: 50%;
+    /* border: solid rgb(0, 8, 255); */
+}
+
+.items h1
+{
+   margin-left: 30%;
+   margin-top: 7%;
+   margin-bottom: 30px;
+    border-bottom: 3px solid green; /* Adds a green underline */
+    display: inline-block;
+    white-space:nowrap;
+    font-size: 40px;
+    font-weight: 400;
+    
+}
+.items h4{
+    margin-left: 20%; 
+    margin-bottom: 5%;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 2px dotted rgb(84, 86, 84); /* Adds a green underline */
+    display: inline-block;
+}
+
+.price{
+    padding-left: 330%;
+}
+/* Galary */
+.galary
+{
+    background-image:url("Assert/bg2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 290px;
+    /* filter: blur(0.1px) ; */
+}
+.galary h1{
+    border-bottom: 4px solid greenyellow; /* Adds a green underline */
+    display: inline-block;
+    margin-left: 43%;
+    margin-top: 8%;
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+    /* text-shadow: 0 0 10px rgba(0, 255, 0, 0.9); */
+    text-shadow: 5px 5px 10px rgba(0, 255, 0, 0.9);
+    
+}
+/* galary image button */
+.image-button
+{
+    display: flex;            
+    justify-content: center;   
+    gap: 15px;                
+    margin: 50px;
+   
+}
+.image-button button
+{
+    font-size: 20px;
+    height: 40px;
+    width: 140px;
+    background-color: #4CAF50;
+    color: white;            
+    border: none;              
+    border-radius: 10px;       
+    cursor: pointer;           
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.image-button button:hover {
+    background-color:greenyellow;
+    color: black;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.imgs_container {
+   
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left; 
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.image-container {
+    width: 30%;                 /* Set each container to 30% for 3-column layout */
+         /* Optional: Limit the max width */
+    position: relative;
+    border-radius: 10px;
+    height: 250px;
+    /* border: solid blue; */
+    overflow: hidden;
+}
+
+.image-container img{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.centered-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    text-align: center;
+    align-content: center;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .centered-text {
+    opacity: 1;
+}
+.hidden {
+    display: none; /* Hide elements with this class */
+  }
+
+  /* chef page */
+  .chef
+  {
+    width: 100%;
+    height:auto;
+    background-image: url("Assert/kit-1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+   
+   overflow: hidden;
+   
+  }
+  .chefclr
+  {
+    color:greenyellow;
+    text-shadow: 5px 5px 10px rgba(33, 169, 33, 0.94);
+  }
+.chef h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 10%;
+}
+.chef_detail
+{
+display: flex;
+width: 100%;
+gap: 50px;
+height: auto;
+margin-left:19%;
+margin-top: 10px;
+}
+.chef_detail img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    align-items: center;
+    object-fit: cover;
+}
+.chef_detail h1{
+    color:greenyellow;
+    font-size: 35px;
+    text-shadow: 5px 5px 10px rgba(33, 169, 33, 0.94);
+}
+.chef_detail h4{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    }
+
+.john, .michael, .gordan
+{
+    width: 17%;
+    height: 75vh;
+    margin: 10px;
+}
+.reservation
+{
+   
+    width: 100%;
+    height: 30vh;
+    background-color: greenyellow;
+}
+.reservation h3{
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+    font-size: 40px;
+    font-weight: 400    ;
+}
+footer
+{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.827);
+display: flex;
+text-align: center;
+justify-content: center;
+gap:120px;
+color: white;
+padding-left: 18px;
+padding-top: 6%;
+
+}
+footer h3{
+    color: greenyellow;
+    font-size: x-large;
+}
+/* mobile device */
+
+@media (max-width: 768px)
+{
+    body{
+        border: 2px solid red;
+    }
+    header h1{
+        font-size: xxx-large;
+        font-weight: 400 ;
+      
+       
+    }
+    header nav a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+    
+    }
+    /* hemburger */
+    header nav {
+        display: none;
+        flex-direction: column;
+        /* background-color: #333; */
+        position: absolute;
+        top: 45px;
+     width: 30%;
+        right: 0;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    header nav.show {
+        display: flex;
+    }
+
+    header nav a {
+        /* last update */
+        margin-top: 18px; 
+        /* add in github */
+        padding: 5px;
+        text-align: center;
+        border-bottom: 0.5px solid #444;
+    }
+    /*  */
+    .title{
+   
+        top: 50%;
+        left: 50%;
+        font-size: 90px;
+        font-weight: 900;
+        white-space: nowrap;
+    }
+    .tag{
+        top: 60%;
+        left: 50%;
+        font-size: 25px;
+       
+    }
+    /* about --------------------------------------*/
+    .About
+{  
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 40px;
+}
+.p1 img{
+    width: 85%;
+    height: 75%;
+    margin-left: 8%;
+    margin-top: 20%;
+
+}
+.p1
+{
+    width: 100%;
+    height: auto;
+    /* border: red solid; */
+  
+}
+
+.p2
+{
+    width: 100%;
+    height: auto;
+    /* border: yellow solid;  */
+  
+}
+.p2 h1{
+   
+   padding-left: 9%;
+   padding-top: 2%;
+   
+   font-weight: 500;
+
+}
+.underline
+{
+    border-bottom: 5px solid green; /* Adds a green underline */
+    display: inline-block; /* Keeps underline only under the text */
+    padding-bottom: 3px; 
+}
+ .p2 p
+{ 
+    padding-left: 9%;
+    padding-top: 2%;
+    margin-right: 5%;
+}
+
+.p2 h2{
+    font-size: 25px;
+   padding-left: 9%;
+   padding-top: 2%;
+   font-weight: 500;
+}
+.ab{ 
+    height: 200px;
+    padding-top: 28px;
+}
+.ab h1{
+   font-size: 30px;
+    font-weight: 400;
+}
+.ab p{
+    margin-left: 10%; 
+    margin-top: 2%;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+
+ 
+ /* menu card */
+ .item1,.item2{
+     flex-direction: column;
+ }
+ .item1_1,.item1_2,.item2_1,.item2_2{
+     width: 100%;
+ }
+ .items h1
+ {
+     margin-left: 13%;
+ }
+ .items h4
+ {
+     display:  inline-block;
+     margin-left: 13%;
+ }
+ .price
+ {
+ 
+     padding-left: 200%;
+     
+ }
+ .galary h1
+{
+    margin-left: 40%;
+    margin-top: 15%;
+   
+}
+/* galary photos */
+.image-container {
+    width: 45%;  /* Two items per row on tablets */
+}
+.centered-text {
+    font-size: 1em;
+}
+.image-container:hover .centered-text {
+    opacity: 1;
+}
+/* chef page */
+.chef_detail
+{
+
+flex-direction: column;
+}
+.chef{
+    padding-top: 30px;
+}
+.chef_detail
+{
+gap: 0px
+}
+.john, .michael, .gordan
+{
+    width: 60%;
+    height: 90vh;
+}
+.reservation h3{
+   
+    padding-top: 13%;
+    font-size: 28px;
+}
+footer
+{
+flex-direction: column;
+height: auto;
+gap: 20px;
+padding-bottom: 50px;
+}
+
+}
+@media (max-width: 430px) {
+    /* body {
+        border: 5px solid green;    } */
+
+    header h1 {
+        font-size: xx-large;
+        font-weight: 400;
+    }
+
+    header nav a {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 3px;
+    }
+
+    header nav:nth-child {
+        width: 30%; 
+        top: 45px;
+        padding: 4px;
+    }
+    
+
+    .title {
+        top: 50%;
+        left: 50%;
+        font-size: 90px;
+        font-weight: 800;
+        white-space: nowrap;
+       
+    }
+
+    .tag {
+        top: 61%;
+        left: 50%;
+        font-size: 18px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    header .hamburger {
+        font-size: 20px;
+
+    }
+    /* about --------------------------------------*/
+    .About
+{  
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 40px;
+}
+.p1 img{
+    width: 85%;
+    height: 75%;
+    margin-left: 8%;
+    margin-top: 20%;
+
+}
+.p1
+{
+    width: 100%;
+    height: auto;
+    /* border: red solid; */
+  
+}
+.p2
+{
+    width: 100%;
+    height: auto;
+    /* border: yellow solid;  */  
+}
+.p2 h1{  
+  font-size: 30px;
+}
+.ab h1{
+   font-size: 35px;
+    
+    margin-left: 35%; 
+}
+.ab p{
+    margin-left: 3%; 
+    font-size: 20px;
+}
+/* menu card */
+.item1,.item2{
+    flex-direction: column;
+}
+.item1_1,.item1_2,.item2_1,.item2_2{
+    width: 100%;
+
+}
+.items h1
+{
+
+    margin-left: 11%;
+}
+.items h4
+{
+    display:inline-block;
+    margin-left: 11%;
+    font-size:20px;
+}
+.price
+{
+
+    padding-left: 180%;
+}
+/* galary section */
+.galary h1
+{
+    margin-left: 90px;
+    margin-top: 25%;
+}
+.image-button
+{
+    justify-content: left;
+    gap: 6px;                
+    margin: 20px;
+   
+}
+/* galary photo */
+.image-container {
+    width: 90%;
+    margin-left: 10px;
+}
+.chef h1{
+    font-size: 40px;
+}
+.chef_detail h4{
+    font-size: 20px;
+    }
+
+.john, .michael, .gordan
+{
+    width: 60%;
+    height: 50vh;
+}
+.reservation
+{
+    width: 100%;
+    height: 20vh;
+    background-color: greenyellow;
+}
+.reservation h3{
+    padding-top: 13%;
+    font-size: 1.5rem;   
+}
+}
